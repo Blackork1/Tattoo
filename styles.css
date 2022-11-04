@@ -338,11 +338,9 @@ form {
   font-weight: bold;
 }
 
-@media (max-width: 450px) {
-    #date {
-    background-color: #ced4da;
-  }
-}
+#date {
+  width: 60%;}
+
 
 /* ### Profile ### */
 
