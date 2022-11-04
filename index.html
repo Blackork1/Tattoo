@@ -131,15 +131,13 @@
     <script>
       function sendEmail(){
         Email.send({
-    SecureToken : "39379bae-c176-4aa1-924d-f64522f19979",
-    To : 'soeren.blocksdorf@googlemail.com',
-    From : document.getElementById("email").value,
+    Host : "smtp.elasticemail.com",
+    Username : "blubberberndlp@googlemail.com",
+    Password : "108DEFF2F0400D44C254B3320E001E5EDF61",
+    To : 'blubberberndlp@googlemail.com',
+    From : "soeren.blocksdorf@gmail.com",
     Subject : "Hello",
-    Body : "Name: " + document.getElementById("name").value 
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Email: " + document.getElementById("numb").value
-        + "<br> Email: " + document.getElementById("date").value
-        + "<br> Email: " + document.getElementById("file").value
+    Body : "Hello"
 }).then(
   message => alert("Message Sent")
 );
