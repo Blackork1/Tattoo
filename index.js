@@ -31,3 +31,12 @@ submit.addEventListener('submit', (e) => {
       message => alert(message)
     );
 })
+
+window.addEventListener("load", function() {
+    var now = new Date();
+    var offset = now.getTimezoneOffset() * 60000;
+    var adjustedDate = new Date(now.getTime() - offset);
+    var formattedDate = adjustedDate.toISOString().substring(0,16); // For minute precision
+    var datetimeField = document.getElementById("date");
+    datetimeField.value = formattedDate;
+});
