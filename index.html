@@ -128,5 +128,20 @@
         </a>
       </p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+      Email.send({
+    SecureToken: "49212a3d-daae-4b94-afed-02054eb5ee37",
+    To : 'soeren.blocksdorf@googlemail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "Name: " + document.getElementById("name").value 
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Email: " + document.getElementById("numb").value
+        + "<br> Email: " + document.getElementById("date").value
+        + "<br> Email: " + document.getElementById("file").value
+}).then(
+  message => alert("Message Sent")
+);
+     </script>
   </body>
 </html>
