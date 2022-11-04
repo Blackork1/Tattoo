@@ -22,10 +22,8 @@ submit.addEventListener('submit', (e) => {
     <br></br>
     `
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "blubberberndlp@googlemail.com",
-        Password : "108DEFF2F0400D44C254B3320E001E5EDF61",
-        To : 'soeren.blocksdorf@googlemail.com',
+        SecureToken: "136d9e19-2795-46ff-a9bd-7f8b87ae110c",
+        To : 'pzaporozhchenko75@gmail.com',
         From : "blubberberndlp@googlemail.com",
         Subject : "Test Mail from" + email.value,
         Body : ebody
