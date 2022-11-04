@@ -68,7 +68,7 @@
     </section>
     <section id="registration">
       <h2 id="registration-header">Terminvereinbarung </h2>
-      <form action="https://formsubmit.co/19ae582e688fcc54106ce61ed80a2fcc" method="POST">
+      <form onsubmit="sendEmail(); reset(); return false;" method="POST">
         <label for="name" class="formlabel">Name:</label>
         <input 
         id="name" 
@@ -95,14 +95,14 @@
         id="date"
         type="date"
         class="form-control"
-        name="email"
+        name="date"
         placeholder="+49123456789" />
         <label for="file" class="formlabel">Foto hinzufügen</label>
         <input
         id="file"
         type="file"
         class="form-control"
-        name="email"
+        name="file"
         placeholder="+49123456789" />
         <input 
         id="submit"
@@ -128,8 +128,10 @@
         </a>
       </p>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js">
-      Email.send({
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
     SecureToken: "49212a3d-daae-4b94-afed-02054eb5ee37",
     To : 'soeren.blocksdorf@googlemail.com',
     From : document.getElementById("email").value,
@@ -142,6 +144,7 @@
 }).then(
   message => alert("Message Sent")
 );
+      }
      </script>
   </body>
 </html>
