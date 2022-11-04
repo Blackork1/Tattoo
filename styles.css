@@ -282,7 +282,7 @@ img {
     var(--background-1)90%,
     var(--background-2));
   text-align: center;
-  height: 800px;
+  height: 700px;
   width: 100vw;
 }
 
@@ -296,7 +296,7 @@ form {
 .formlabel {
   position: relative;
   display: block;
-  margin: 25px auto 5px; 
+  margin: 10px auto 5px; 
   text-shadow: 2px 2px 3px black;
 }
 
@@ -346,7 +346,7 @@ form {
 /* ### Profile ### */
 
 #profile {
-  height: 500px;
+  height: 700px;
   width: 100vw;
   background-color: var(--background-2);
   text-align: center;
@@ -365,7 +365,7 @@ form {
 .btn {
   color: white;
   display: inline-block;
-  padding: 2rem 5rem;
+  padding: 3rem 5rem;
   border-radius: 2px;
 }
 
