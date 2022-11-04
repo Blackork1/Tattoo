@@ -103,8 +103,12 @@
         type="file"
         class="form-control"
         name="file"
-        placeholder="+49123456789" 
         accept="image/png, image/jpeg"/>
+        <button 
+        id = "upload-button"
+        onclick="saveFile()">
+        Upload
+      </button>
         <input 
         id="submit"
         type="submit"
@@ -130,5 +134,13 @@
       </p>
     </footer>
     <script src="./index.js"></script>
+    <script>
+      async function saveFile() {
+        let formData = new FormData();
+        formData.append("file", fileupload.files[0]);
+        await fetch('/upload.php', {method: "POST", body: formData});
+        alert('The file has been uploaded,');
+        }
+    </script>
   </body>
 </html>
