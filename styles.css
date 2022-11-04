@@ -116,7 +116,7 @@ a {
 
 #welcome-section {
   width: 100vw;
-  height: 600px;
+  height: 700px;
   background-color: var(--background-1);
   padding-top: 60px;
     background-image: url(https://www.lto.de/fileadmin/_processed_/9/3/csm_tattooo_620_413232e52c.jpg);
@@ -337,6 +337,7 @@ form {
   font-size: 2rem;
   font-weight: bold;
 }
+
 
 #date {
   width: 60%;}
