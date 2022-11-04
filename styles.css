@@ -322,7 +322,7 @@ form {
 }
 
 #submit {
-  margin: 6rem auto 0 auto;
+  margin: 4rem auto 0 auto;
   display: block;
   width: 200px;
   height: 4rem;
@@ -358,7 +358,7 @@ form {
   font-size: 3rem;
   padding-bottom: 4px;
   max-width: 300px;
-  margin: 0rem auto 3rem auto;
+  margin: 2rem auto 3rem auto;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 
