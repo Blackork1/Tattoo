@@ -324,7 +324,7 @@ form {
 #submit {
   margin: 6rem auto 0 auto;
   display: block;
-  width: 30%;
+  width: 200px;
   height: 4rem;
   padding: 0.375rem;
   color: #b01e13;
@@ -336,6 +336,10 @@ form {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+}
+
+#date {
+  width: 60%;
 }
 
 /* ### Profile ### */
@@ -377,6 +381,8 @@ form {
 .contact-details i {
   margin-right: 10px;
 }
+
+
 
 
 /* ### Footer ### */
