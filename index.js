@@ -27,9 +27,7 @@ submit.addEventListener('submit', (e) => {
         From : "blubberberndlp@googlemail.com",
         Subject : "Test Mail from" + email.value,
         Body : ebody
-    }).then(
-      message => alert(message)
-    );
+    })
 })
 
 
