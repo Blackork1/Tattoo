@@ -2,7 +2,7 @@ const fname =document.getElementById('name');
 const email =document.getElementById('email');
 const numb =document.getElementById('numb');
 const date =document.getElementById('date');
-const file =document.getElementById('file');
+const text =document.getElementById('text');
 const submit =document.getElementsByClassName('form-contact')[0];
 
 submit.addEventListener('submit', (e) => {
@@ -18,7 +18,7 @@ submit.addEventListener('submit', (e) => {
     <br>
     <br>Termin: </br>${date.value}
     <br>
-    <br>Bild: </br>${file.value}
+    <br>Bild: </br>${text.value}
     <br></br>
     `
     Email.send({
@@ -32,6 +32,11 @@ submit.addEventListener('submit', (e) => {
     );
 })
 
+
+
+
+//Uhrzeit für Registrirung
+
 window.addEventListener("load", function() {
     var now = new Date();
     var offset = now.getTimezoneOffset() * 60000;
@@ -40,6 +45,9 @@ window.addEventListener("load", function() {
     var datetimeField = document.getElementById("date");
     datetimeField.value = formattedDate;
 });
+
+
+//text einfliegen Start
 
 document.querySelector(".text-animation1").innerHTML =  
 document.querySelector(".text-animation1").textContent.replace(/./g, "<span>$&</span>");
