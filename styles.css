@@ -352,7 +352,7 @@ form {
 }
 
 #submit {
-  margin: 4rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   display: block;
   width: 200px;
   height: 4rem;
@@ -369,7 +369,7 @@ form {
 }
 
 #text {
-  height: 60px;
+  height: 70px;
 }
 
 /* ### Profile ### */
