@@ -7,7 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/92823c1ad2.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm (){
+      $.ajax({
+        url:"https://api.apispreadsheets.com/data/xxYMLtTfdTJ1jk4G/",
+        type:"post",
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Deine Daten wurden übersandt. Ich melde mich bei dir :)")
+        },
+        error: function(){
+          alert("Es gab ein Problem. Überprüfe bitte deine Daten :(")
+        }
+      });
+    }
+  </script>
   </head>
+
   <body>
     <nav id="navbar">
       <h1>My Portfolio</h1>
@@ -68,53 +88,48 @@
     </section>
     <section id="registration">
       <h2 id="registration-header">Terminvereinbarung </h2>
-      <form class="form-contact">
+      <form class="form-contact" id="myForm">
         <label for="name" class="formlabel">Name:</label>
         <input 
         id="name" 
         type="name" 
-        name="name"
+        name="full_name"
         class="form-control"
-        placeholder="Enter Your Name" />
+        placeholder="Gib deinen Namen ein" 
+        required/>
         <label for="email" class="formlabel">Email:</label>
         <input 
         id="email" 
         type="email" 
         name="email"
         class="form-control"
-        placeholder="Enter Your E-Mail" />
+        placeholder="Gib deine E-Mail ein" />
         <label for="numb" class="formlabel">Telefonnummer:</label>
         <input
         id="numb"
         type="tel"
         class="form-control"
-        name="numb"
-        placeholder="+49123456789" />
-        <label for="date" class="formlabel">Termin</label>
+        name="number"
+        placeholder="0123456789" />
+        <label for="date" class="formlabel">Termin:</label>
         <input
         id="date"
         type="datetime-local"
         class="form-control"
-        name="date"/>
-        <label for="file" class="formlabel">Foto hinzufügen</label>
+        name="appointment"/>
+        <label for="text" class="formlabel">Schreib mir deine Vorstellungen:</label>
         <input
-        id="file"
-        type="file"
+        type="text"
+        name="text"
         class="form-control"
-        name="file"
-        accept="image/png, image/jpeg"/>
-        <button 
-        id = "upload-button"
-        onclick="saveFile()">
-        Upload
-      </button>
+        id="text" />
         <input 
         id="submit"
+        onclick='SubForm()'
         type="submit"
-        value="Absenden"
-        name="submit"/>
-      </form>
-      
+        value="Absenden"/>
+    </form>
+
     </section>
     <section id="profile">
       <h2 id="profile-header">Meld dich gern bei mir!</h2>
@@ -133,13 +148,32 @@
       </p>
     </footer>
     <script src="./index.js"></script>
-    <script>
-      async function saveFile() {
+
+  </body>
+</html>
+
+
+
+
+        <!--
+        <script>
+        async function saveFile() {
         let formData = new FormData();
         formData.append("file", fileupload.files[0]);
         await fetch('/upload.php', {method: "POST", body: formData});
         alert('The file has been uploaded,');
         }
-    </script>
-  </body>
-</html>
+        </script>
+
+        <label for="file" class="formlabel">Foto hinzufügen</label>
+        <input
+        id="file"
+        type="file"
+        class="form-control"
+        name="file"
+        accept="image/png, image/jpeg"/>
+
+        <button id = "upload-button" onclick="saveFile()"> Upload </button>      
+        <button id="submit" onclick='SubForm()'>Absenden</button>
+
+-->
