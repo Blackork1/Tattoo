@@ -368,10 +368,9 @@ form {
   font-weight: bold;
 }
 
-
-#date {
-  width: 60%;}
-
+#text {
+  height: 80px;
+}
 
 /* ### Profile ### */
 
