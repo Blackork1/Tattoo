@@ -41,7 +41,7 @@
     <section id="welcome-section">
       <h1 class="text-animation1">Polina </h1>
       <h1 class="text-animation2">TATTOO</h1>
-      <a href="#registration">Freie Termine</a>
+      <a href="#registration">Terminvereinbarung</a>
       
     </section>
     <section id="projects" class="project-section">
@@ -103,26 +103,31 @@
         type="email" 
         name="email"
         class="form-control"
-        placeholder="Gib deine E-Mail ein" />
+        placeholder="Gib deine E-Mail ein"
+        required />
         <label for="numb" class="formlabel">Telefonnummer:</label>
         <input
         id="numb"
         type="tel"
         class="form-control"
         name="number"
-        placeholder="0123456789" />
+        placeholder="0123456789"
+        required />
         <label for="date" class="formlabel">Termin:</label>
         <input
         id="date"
         type="datetime-local"
         class="form-control"
-        name="appointment"/>
+        name="appointment"
+        required/>
         <label for="text" class="formlabel">Schreib mir deine Vorstellungen:</label>
         <input
         type="text"
         name="text"
         class="form-control"
-        id="text" />
+        id="text"
+        placeholder="Zum Beispiel: Ich möchte gerne ein Drache ca. 10x15cm." 
+        required/>
         <input 
         id="submit"
         onclick='SubForm()'

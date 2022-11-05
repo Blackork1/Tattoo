@@ -117,7 +117,7 @@ a {
 
 #welcome-section {
   width: 100vw;
-  height: 700px;
+  height: 720px;
   background-color: var(--background-1);
   padding-top: 60px;
   background-image: url(https://www.lto.de/fileadmin/_processed_/9/3/csm_tattooo_620_413232e52c.jpg);
@@ -130,8 +130,6 @@ a {
   text-align: center;
   color: #b01e13;
 }
-
-
 
 #welcome-section h1 {
   margin-top: 100px;
@@ -211,7 +209,7 @@ a {
   font-family: courier-new;
   display: block;
   border: 6px outset #b01e13;
-  width: 160px;
+  width: 200px;
   margin: 20px auto 0 auto;
   padding: 5px;
   background-color: rgba(255,255,255);
@@ -314,7 +312,7 @@ img {
     var(--background-1)90%,
     var(--background-2));
   text-align: center;
-  height: 700px;
+  height: 720px;
   width: 100vw;
 }
 
