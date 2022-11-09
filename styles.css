@@ -120,7 +120,7 @@ a {
   height: 720px;
   background-color: var(--background-1);
   padding-top: 60px;
-  background-image: url(https://www.lto.de/fileadmin/_processed_/9/3/csm_tattooo_620_413232e52c.jpg);
+  background-image: url(Images/IMG-0530.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -235,7 +235,7 @@ a {
 @media (max-width: 568px) and (min-width: 450px)
 {
   .project-section {
-  height: 850px;
+  height: 1100px;
   }
 }
 
