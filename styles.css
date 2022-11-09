@@ -79,8 +79,8 @@ a {
 {
   .nav-list a {
   display: block;
-  font-size: 1.1rem;
-  padding: 2rem 1rem 2rem;
+  font-size: 1rem;
+  padding: 2rem 0.5rem 2rem;
   }
   #navbar ul {
   right: 2%;
@@ -235,7 +235,7 @@ a {
 @media (max-width: 800px) and (min-width: 200px)
 {
   .project-section {
-  height: 1100px;
+  height: 1050px;
   }
 }
 
