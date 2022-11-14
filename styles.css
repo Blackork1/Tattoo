@@ -50,9 +50,9 @@ a {
 }
 
 #navbar h1 {
-  left: 5%;
+  left: 3%;
   position: absolute;
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: block;
   font-size: 2.5rem;
 }
@@ -94,7 +94,7 @@ a {
   }
 }
 
-@media (min-width: 476px) and (max-width: 650px)
+@media (min-width: 476px) and (max-width: 750px)
 {
   .nav-list a {
   display: block;
@@ -126,13 +126,15 @@ a {
   background-position: center;
 }
 
+
+
 #welcome-section h1, #welcome-section a {
   text-align: center;
   color: #b01e13;
 }
 
 #welcome-section h1 {
-  margin-top: 250px;
+  margin-top: 260px;
   font-size: 4rem;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.8);
 }
@@ -143,7 +145,7 @@ a {
 
 #welcome-section h1:last-of-type {
   margin-top: 0px;
-  font-size: 25rem;
+  font-size: 22rem;
   text-shadow: 3px 3px 5px rgba(255,255,255,0.8);
 }
 
@@ -160,7 +162,7 @@ a {
   }
 }
 
-@media (max-width: 800px) and (min-width: 0px)
+@media (max-width: 830px) and (min-width: 0px)
 {
   #welcome-section h1:last-of-type {
   margin-top: 0px;
@@ -173,7 +175,33 @@ a {
 
 }
 
-@media (max-width: 1800px) and (min-width: 800px)
+@media (max-width: 1230px) and (min-width: 830px)
+{
+  #welcome-section h1:last-of-type {
+    margin-top: 0px;
+    font-size: 10rem;
+    text-shadow: 3px 3px 5px rgba(255,255,255,0.8);
+    }
+}
+
+@media (min-width: 800px){
+#welcome-section {
+  width: 100vw;
+  height: 1200px;
+  background-color: var(--background-1);
+  padding-top: 60px;
+  background-image: url(Images/IMG-0530.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+#welcome-section h1 {
+  margin-top: 700px;
+}
+}
+
+@media (max-width: 1800px) and (min-width: 1231px)
 {
   #welcome-section h1:last-of-type {
   margin-top: 0px;
@@ -185,13 +213,13 @@ a {
 .text-animation1 span {
   position: relative;
   opacity: 0;
-  animation: textAnimation 2s ease forwards;
+  animation: textAnimation 3s ease forwards;
 }
 
 .text-animation2 span {
   position: relative;
   opacity: 0;
-  animation: textAnimation 2s ease forwards;
+  animation: textAnimation 3s ease forwards;
 }
 
 @keyframes textAnimation {
@@ -201,7 +229,6 @@ a {
     opacity: 1;
   }
 }
-
 
 #welcome-section a {
   font-size: 2rem;
