@@ -28,6 +28,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.header {
+  color: white;
+  font-size: 2.8rem;
+  max-width: 300px;
+}
 
 
 li {
@@ -267,9 +272,6 @@ a {
 }
 
 #project-header {
-  color: white;
-  font-size: 3rem;
-  max-width: 300px;
   margin: 0 auto 3rem auto;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
@@ -325,9 +327,6 @@ img {
 }
 
 #registration-header{
-  color: white;
-  font-size: 2.8rem;
-  max-width: 300px;
   margin: 0rem auto 1rem auto;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
@@ -410,10 +409,7 @@ form {
 }
 
 #profile-header{
-  color: white;
-  font-size: 3rem;
   padding-bottom: 4px;
-  max-width: 300px;
   margin: 2rem auto 3rem auto;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
@@ -440,11 +436,7 @@ form {
 }
 
 
-
-
 /* ### Footer ### */
-
-
 
 footer {
   font-weight: 800;
@@ -460,8 +452,6 @@ footer {
   color: grey;
 }
 
-
-
 footer a {
   color: grey;
 }
@@ -471,4 +461,36 @@ footer a {
     flex-direction: column;
     text-align: center;
   }
+}
+
+
+
+
+/* Impressum */
+
+#impressum{
+  color: rgba(255,255,255,0.8);
+  background-color: #1c0b0a;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 98rem) minmax(1rem, 1fr);
+  row-gap: 1rem;
+}
+
+.text-impressum{
+  padding-top: 5rem;
+  grid-column: 2 / 3;
+  font-size: 1.8rem;
+  letter-spacing: 0.6px;
+  column-width: 30rem;
+}
+
+.h3-impressum{
+  margin: 2rem auto 0.5rem auto;
+}
+
+.heading {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1.5rem;
 }
