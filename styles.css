@@ -44,6 +44,11 @@ a {
   color: black;
 }
 
+p {
+  color:rgba(255,255,255,0.8);
+}
+
+
 #navbar {
   width: 100vw;
   height: 55px;
@@ -121,7 +126,7 @@ a {
 /* Welcome section */
 
 #welcome-section {
-  width: 100vw;
+  width: 100%;
   height: 720px;
   background-color: var(--background-1);
   padding-top: 60px;
@@ -191,7 +196,7 @@ a {
 
 @media (min-width: 800px){
 #welcome-section {
-  width: 100vw;
+  width: 100%;
   height: 1200px;
   background-color: var(--background-1);
   padding-top: 60px;
@@ -254,22 +259,17 @@ a {
   transform: scale(1.08);
 }
 
-
 /* ### Projects ### */ 
 
 .project-section {
   padding: 6rem 2rem;
   background-color: var(--background-2);
   text-align: center;
-  height: 700px;
+  height: 1100px;
+  width: 100%;
 }
 
-@media (max-width: 800px) and (min-width: 200px)
-{
-  .project-section {
-  height: 1050px;
-  }
-}
+
 
 #project-header {
   margin: 0 auto 3rem auto;
@@ -284,6 +284,17 @@ a {
   max-width: 1232px;
   margin: 0 auto;
   margin-bottom: 6rem;
+}
+
+@media (min-width: 870px) {
+  #project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
 }
 
 .project-image {
@@ -339,11 +350,11 @@ img {
     var(--background-2));
   text-align: center;
   height: 720px;
-  width: 100vw;
+  width: 100%;
 }
 
 form {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #b01e13;
   text-align: center;
   font-weight: bold;
@@ -352,7 +363,7 @@ form {
 .formlabel {
   position: relative;
   display: block;
-  margin: 10px auto 5px; 
+  margin: 20px auto 5px; 
   text-shadow: 2px 2px 3px black;
 }
 
@@ -398,26 +409,69 @@ form {
   height: 70px;
 }
 
+
+/* ### aboutMe ### */
+
+#aboutMe{
+  padding-top: 2rem;
+  background: linear-gradient(
+    var(--background-1)10%,
+    var(--background-1)90%,
+    var(--background-2));
+  text-align: center;
+  height: 500px;
+  width: 100%;
+}
+
+#aboutMe-header{
+  margin: 0rem auto 3rem auto;
+}
+
+.aboutMe-text{
+  margin: 0 20px;
+  font-size: 1.8rem;
+  justify-self: start;
+  text-align: justify;
+}
+
+@media (max-width: 800px) {
+  .aboutMe-text{
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+  .header{
+    font-size: 2.4rem;
+  }
+}
+
+#aboutMe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr 1fr;
+  justify-content: center;
+  gap: 4rem 1rem;
+}
+
+
 /* ### Profile ### */
 
 #profile {
-  height: 700px;
-  width: 100vw;
+  height: 800px;
+  width: 100%;
   background-color: var(--background-2);
   text-align: center;
-  padding: 7rem 2rem;
+  padding: 4rem 2rem;
 }
 
 #profile-header{
   padding-bottom: 4px;
-  margin: 2rem auto 3rem auto;
+  margin: 5rem auto 1rem auto;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 
 .btn {
   color: white;
   display: inline-block;
-  padding: 3rem 5rem;
+  padding: 5rem 3rem;
   border-radius: 2px;
 }
 
@@ -425,6 +479,14 @@ form {
   font-size: 2.4rem;
   text-shadow: 2px 2px 1px black;
   transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 800px) {
+  .contact-details {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 1px black;
+    transition: transform 0.3s ease-out;
+  }
 }
 
 .contact-details:hover {
@@ -446,10 +508,12 @@ footer {
   padding: 2rem;
   background: var(--background-1);
   border-top: 4px solid #b01e13;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   vertical-align: center;
   color: grey;
+  bottom: 0;
+  left: 0;
 }
 
 footer a {
