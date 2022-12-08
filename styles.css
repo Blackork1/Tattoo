@@ -16,6 +16,9 @@
 *::after {
   box-sizing: inherit;
 }
+body {
+  background-color:  var(--background-1);
+}
 
 html {
   box-sizing: border-box;
@@ -333,10 +336,6 @@ img {
 
 /* ### Form ### */
 
-#registration {
-  padding: 7rem 2rem;
-}
-
 #registration-header{
   margin: 0rem auto 1rem auto;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
@@ -351,6 +350,7 @@ img {
   text-align: center;
   height: 720px;
   width: 100%;
+  padding: 7rem 2rem;
 }
 
 form {
@@ -557,4 +557,69 @@ footer a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 1.5rem;
+}
+
+/* ### Termin-Seite ### */
+
+#registrationpage {
+  text-align: center;
+  width: 100%;
+  padding: 7rem 2rem;
+}
+
+#myForm {
+  font-size: 3rem;
+  color: #b01e13;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 10%;
+}
+
+.formlabelpage {
+  position: relative;
+  display: block;
+  margin: 40px auto 10px; 
+  text-shadow: 2px 2px 3px black;
+}
+
+.form-control {
+  width: 60%;
+  height: 3rem;
+  padding: 0.375rem;
+  margin-top: 1px;
+  color: #fff;
+  background-color: rgba(50, 50, 50, 0.2);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.75rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s easy-in-out;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form-control:focus {
+  border-color: #b01e13;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(176, 30, 19, 0.25);
+}
+
+#submit {
+  margin: 1rem auto 0 auto;
+  display: block;
+  width: 200px;
+  height: 4rem;
+  padding: 0.375rem;
+  color: #b01e13;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.75rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s easy-in-out;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#text {
+  height: 70px;
 }
