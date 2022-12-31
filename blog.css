@@ -34,24 +34,28 @@
     background-color: var(--background-2);
   }
 .grid-container {
-    padding-top: 15rem;
     gap: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 450px) ;
+    grid-template-columns: repeat(auto-fit, minmax(380px,450px)) ;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding-bottom: 10rem;
+    padding: 15rem 1rem 10rem 1rem;
 }
+
+@media (min-width: 600px) {
+  .flex-container:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px  white;
+}
+}
+
   
 .flex-container {
     display: flex;
     background-color: var(--background-3);
 }
 
-.flex-container:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 10px  white;
-}
+
 
 .left-column {
     display: flex;

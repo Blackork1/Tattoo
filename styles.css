@@ -521,9 +521,12 @@ footer {
   bottom: 0;
 }
 
-.footer-bottom {
-  position: absolute;
-  bottom: 0;
+@media (min-width: 600px) {
+  .footer-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+  
 }
 
 footer a {
