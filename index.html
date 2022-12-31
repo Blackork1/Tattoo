@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Polina Tattoo Berlin</title>
-    <meta name="description" content="Tattoo ab 80€. Termine von Montag-Freitag zwischen 13:00-20:00 Uhr verfügbar."/>
+    <title>Polina Tattoo Berlin | Individuelle Designs | Professionelle Tattoos</title>
+    <meta name="description" content="Individuelle Tattoos und ausführliche Beratung von einer erfahrenen Tattoomeisterin. Hättest du gerne ein neues Tattoo? Vereinbare ein Termin bei mir."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/92823c1ad2.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -12,21 +12,6 @@
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-  <script>
-    function SubForm (){
-      $.ajax({
-        url:"https://api.apispreadsheets.com/data/xxYMLtTfdTJ1jk4G/",
-        type:"post",
-        data:$("#myForm").serializeArray(),
-        success: function(){
-          alert("Deine Daten wurden übersandt. Ich melde mich bei dir :)")
-        },
-        error: function(){
-          alert("Es gab ein Problem. Überprüfe bitte deine Daten :(")
-        }
-      });
-    }
-  </script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWC9X70RT4"></script>
 <script>
@@ -47,7 +32,7 @@
       <h1>Polina Tattoo</h1>
       <ul class="nav-list">
         <li>
-          <a href="index.html">Home</a>
+          <a href="#welcome-section">Home</a>
         </li>
         <li>
           <a href="blog.html">Portfolio</a>
@@ -129,7 +114,7 @@
       </div>
     </section>
 
-    <section id="registration">
+<section id="registration">
       <h2 class="header" id="registration-header">Terminvereinbarung</h2>
       <form class="form-contact" id="myForm">
         <label for="name" class="formlabel">Name:</label>
@@ -172,13 +157,15 @@
         cols="20"
         placeholder="Zum Beispiel: Ich möchte gerne ein Drache ca. 10x15cm." 
         required></textarea>
+        <label for="submit" class="formlabel"></label>
         <input 
+        name="submit"
         id="submit"
         onclick='SubForm()'
         type="submit"
         value="Absenden"/>
     </form>
-    </section>
+</section>   
     
     <section id="profile">
       <h2 id="aboutMe-header" class="header">Bin ich Künstler oder Tätowierer?</h2>
@@ -200,8 +187,7 @@
       <a id="profile-link" href="mailto:pzaporozhchenko75@gmail.com" target="_blank" class="btn contact-details"><i class="fa-solid fa-envelope"></i>Schreib mir</a>
       <a id="profile-link" href="tel:01759122452" target="_blank" class="btn contact-details"><i class="fa-solid fa-phone"></i>Ruf mich an</a>
     </section>
-
-  	<footer id="footer">
+    <footer id="footer">
       <p><a href=impressum.html target="_blank">Impressum</a></p>
       <p>&copy;
         Erstellt für 
@@ -210,6 +196,21 @@
       </p>
     </footer>
     <script src="./index.js"></script>
+    <script>
+      function SubForm (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/xxYMLtTfdTJ1jk4G/",
+          type:"post",
+          data:$("#myForm").serializeArray(),
+          success: function(){
+            alert("Deine Daten wurden übersandt. Ich melde mich bei dir :)")
+          },
+          error: function(){
+            alert("Es gab ein Problem. Überprüfe bitte deine Daten :(")
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 

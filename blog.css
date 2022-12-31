@@ -7,16 +7,16 @@
   :root {
     --background-1: #241311;
     --background-2: #120b0a;
+    --background-3: #362323;
     --header: #731f19;
+    --border1: rgb(160, 78, 78);
+    --border2: rgba(199, 9, 9, 0.815);
   }
   
   *,
   *::before,
   *::after {
     box-sizing: inherit;
-  }
-  body {
-    background-color:  var(--background-1);
   }
 
   html {
@@ -29,37 +29,90 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
+
+  main {
+    background-color: var(--background-2);
+  }
 .grid-container {
     padding-top: 10rem;
-    gap: 2rem;
+    gap: 1.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, 450px) ;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 10rem;
 }
   
 .flex-container {
     display: flex;
-    width: 450px;
-    height: 320px;
-    border: 1rem solid antiquewhite;
-    border-radius: 1%;
-  }
+    background-color: var(--background-3);
+}
+
+.flex-container:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px  white;
+}
 
 .left-column {
+    display: flex;
     flex-direction: column;
+    flex-wrap:nowrap;
     width: 400px;
-    border-right-style: solid;
-    border-right-color: antiquewhite;
-    border-right-width: 0.2rem;
+    border-inline-end: 2px solid;
+    padding-right: 10px;
+    border-image: linear-gradient(var(--border1), var(--border2)) 1;
+    align-items: center;
   }
-  .right-column {
-    object-fit: fill;
-    width: 100%;
-    max-height: 100%;
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    object-fit:cover;
+    align-items: center;
+    padding: 0 5px;
+    width: 450px;
 }
 .blog-headline {
-    color: black;
+    color: #b01e13;
+    font-weight: 900;
     font-size: 2rem;
-    border-bottom: 0.1rem solid antiquewhite;
+    text-shadow: -1.5px -1px 2px #ffffff40;
+    padding: 3px 0;
+    margin-left: 5px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, var(--border1), var(--border2)) 1;
     text-align: center;
 }
+
+.blog-beschreibung {
+  display: flex;
+  height: 100%;
+  padding: 5px;
+  color: antiquewhite;
+  font-size: 1.2rem;
+  align-items: center;
+  text-align: justify;
+  text-shadow: -1px -1px 1px #000000;
+}
+
+.blog-frage {
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.blog-image {
+  padding-top: 5px;
+  border-top: 2px solid;
+  border-image: linear-gradient(90deg, var(--border1), var(--border2)) 1;
+}
+
+
+.gradient-border {
+  border: 5px solid;
+  border-image: linear-gradient(135deg, var(--border1), var(--border2)) 1;
+  padding: 5px 0;
+}
+
