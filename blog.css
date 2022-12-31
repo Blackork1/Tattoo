@@ -34,7 +34,7 @@
     background-color: var(--background-2);
   }
 .grid-container {
-    padding-top: 10rem;
+    padding-top: 15rem;
     gap: 1.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, 450px) ;

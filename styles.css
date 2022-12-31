@@ -355,7 +355,7 @@ img {
   text-align: center;
   height: 720px;
   width: 100%;
-  padding: 7rem 2rem;
+  padding: 5rem 2rem;
 }
 
 form {
@@ -418,7 +418,7 @@ form {
 /* ### aboutMe ### */
 
 #aboutMe{
-  padding-top: 2rem;
+  padding-top: 1rem;
   background: linear-gradient(
     var(--background-1)10%,
     var(--background-1)90%,
@@ -464,7 +464,7 @@ form {
   width: 100%;
   background-color: var(--background-2);
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 
 #profile-header{
@@ -518,6 +518,7 @@ footer {
   vertical-align: center;
   color: grey;
   left: 0;
+  bottom: 0;
 }
 
 .footer-bottom {
