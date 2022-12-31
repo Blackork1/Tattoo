@@ -353,7 +353,7 @@ img {
     var(--background-1)90%,
     var(--background-2));
   text-align: center;
-  height: 720px;
+  height: 800px;
   width: 100%;
   padding: 5rem 2rem;
 }
@@ -525,8 +525,7 @@ footer {
   .footer-bottom {
     position: absolute;
     bottom: 0;
-  }
-  
+  }  
 }
 
 footer a {
